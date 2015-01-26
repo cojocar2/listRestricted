@@ -1,0 +1,10 @@
+def identifyOUI(macaddress):
+    """This function should identify the manufacturer of a given device based on its MAC adress"""
+    # Load the Wireshark manufacturers database file from the disk and  search through it to return the manufacturer
+    
+    database = open("data.txt", "r")
+    for line in database:
+        if macaddress in line: print line
+    database.close()
+
+identifyOUI("00:03:26")
