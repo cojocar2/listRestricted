@@ -1,0 +1,21 @@
+def amazingMenu():
+    print "Press Enter to begin"
+    raw_input()
+    user = " "
+    while user != "exit":
+        user = raw_input("Please enter the name of the function you want to use or enter exit to kill the program:")
+        if user == "scanport":
+            print "scanport"
+        if user == "crackhouse":
+            print "crackhouse"
+        if user == "listRestricted":
+            print "listRestricted"
+        if user == "identifyOUI":
+            print "identifyOUI"
+        if user == "generateReport":
+            print "generateReport"          
+    print ('YAPTF: by DiamondHouse inc.')
+
+amazingMenu()
+
+
